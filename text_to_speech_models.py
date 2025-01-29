@@ -13,6 +13,7 @@ torch.set_num_threads(4)
 local_file_ru = 'model_ru.pt'
 local_file_en = 'model_en.pt'
 
+# load model
 if not os.path.isfile(local_file_ru):
     torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v4_ru.pt',
                                    local_file_ru)
